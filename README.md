@@ -18,16 +18,16 @@ This fetches and returns the latest currency rates .
 
 #### Query Parameters
 
-`base`: string <small> (optional) </small> - the home currency rates to be quoted against (i.e. CZK) <br>
-`currency`: string <small> (optional) </small> -the specific exchange rates based on a comma-separated symbols parameter (i.e. EUR,GBP,USD) <br>
+`base`: string <small> (optional) </small> - the home currency rates to be quoted against (i.e. `CZK`) <br>
+`currency`: string <small> (optional) </small> -the specific exchange rates based on a comma-separated symbols parameter (i.e. `EUR,GBP,USD`) <br>
 
 #### Sample Request
 
-`curl https://api-currency-rates.herokuapp.com/api/rates?base=CZK&currency=EUR,GBP,USD -X GET`
+`curl 'https://api-currency-rates.herokuapp.com/api/rates?base=CZK&currency=EUR,GBP,USD' -X GET`
 
 #### Sample Response
 
-`results` object - JSON object containing the results from the API. <br>
+`results`: object - JSON object containing the results from the API. <br>
 `base`: string - the requested home rate from the request URL query strings. <br>
 `date`: string - the current date. <br>
 `rates`: object - object containing the requested currency in the request URL query strings <br>
